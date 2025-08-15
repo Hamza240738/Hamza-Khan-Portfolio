@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import hamzaPortrait from '@/assets/hamza-portrait.jpg';
+const hamzaPortrait = '/lovable-uploads/2afe470b-5bd1-4d2e-9f4e-449d711c49c6.png';
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });

@@ -25,7 +25,7 @@ const FeaturedWorkSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Featured projects (first 3)
+  // Featured projects (first 3 in sequence)
   const featuredProjects = [
     {
       title: 'Visionary Coders',
@@ -34,16 +34,16 @@ const FeaturedWorkSection = () => {
       liveUrl: 'https://visionarycoders.lovable.app'
     },
     {
-      title: 'Nature\'s Pulse',
-      category: 'Wellness App',
-      imageUrl: '/lovable-uploads/f2868539-6186-4454-a542-03667c08c4d7.png',
-      liveUrl: 'https://nature-pulse.lovable.app'
+      title: 'My Safety LLC',
+      category: 'Safety Platform',
+      imageUrl: '/lovable-uploads/fdc73a27-7145-4918-ab39-6e0325bc8b40.png',
+      liveUrl: 'https://my-safety-llc.lovable.app'
     },
     {
-      title: 'Silicon Graphics',
-      category: 'Mobile Development',
-      imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
-      liveUrl: 'https://silicon-graphics.lovable.app'
+      title: 'Omnifood',
+      category: 'Food Delivery',
+      imageUrl: '/lovable-uploads/4c90f49c-e068-409a-a971-d5f80e4a059c.png',
+      liveUrl: 'https://omnifood.lovable.app'
     }
   ];
 
