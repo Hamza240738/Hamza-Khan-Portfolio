@@ -60,7 +60,7 @@ const Navigation = () => {
         <Button
           variant="outline"
           size="sm"
-          className="hidden md:inline-flex border-2 border-hero-red text-hero-red hover:bg-hero-red hover:text-pure-white hover:shadow-glow transition-all duration-300 font-medium"
+          className="hidden md:inline-flex bg-transparent border-2 border-pure-white text-pure-white hover:bg-pure-white hover:text-[#e63946] transition-all duration-300 font-medium"
           asChild
         >
           <Link to="/contact">Get In Touch</Link>
