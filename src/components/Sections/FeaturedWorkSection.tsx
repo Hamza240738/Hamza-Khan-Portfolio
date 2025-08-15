@@ -30,19 +30,19 @@ const FeaturedWorkSection = () => {
     {
       title: 'Visionary Coders',
       category: 'Education Platform',
-      imageUrl: '/lovable-uploads/628c50b2-9f73-41b7-98e8-26e8fa51bb26.png',
+      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
       liveUrl: 'https://visionarycoders.lovable.app'
     },
     {
       title: 'My Safety LLC',
       category: 'Safety Platform',
-      imageUrl: '/lovable-uploads/fdc73a27-7145-4918-ab39-6e0325bc8b40.png',
+      imageUrl: '/lovable-uploads/e588c737-d2c5-4ea5-95f6-fe18492d61b7.png',
       liveUrl: 'https://my-safety-llc.lovable.app'
     },
     {
       title: 'Omnifood',
       category: 'Food Delivery',
-      imageUrl: '/lovable-uploads/4c90f49c-e068-409a-a971-d5f80e4a059c.png',
+      imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
       liveUrl: 'https://omnifood.lovable.app'
     }
   ];
@@ -80,7 +80,7 @@ const FeaturedWorkSection = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
             {featuredProjects.map((project, index) => (
               <ProjectCard
                 key={project.title}

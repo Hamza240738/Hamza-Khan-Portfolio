@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const Navigation = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="text-2xl font-black uppercase tracking-wider text-foreground hover:text-primary transition-colors duration-300"
+          className="text-2xl font-black uppercase tracking-wider text-pure-white hover:text-hero-red transition-colors duration-300"
         >
           MHK
         </Link>
@@ -44,12 +46,12 @@ const Navigation = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`relative text-sm font-medium uppercase tracking-wide transition-all duration-300 hover:text-primary group ${
-                location.pathname === item.path ? 'text-primary' : 'text-foreground'
+              className={`relative text-sm font-medium uppercase tracking-wide transition-all duration-300 hover:text-hero-red hover:shadow-glow group ${
+                location.pathname === item.path ? 'text-hero-red' : 'text-pure-white'
               }`}
             >
               {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-hero-red transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </div>
@@ -58,7 +60,7 @@ const Navigation = () => {
         <Button
           variant="outline"
           size="sm"
-          className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-pure-white transition-all duration-300"
+          className="hidden md:inline-flex border-2 border-hero-red text-hero-red hover:bg-hero-red hover:text-pure-white hover:shadow-glow transition-all duration-300 font-medium"
           asChild
         >
           <Link to="/contact">Get In Touch</Link>
@@ -69,12 +71,41 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="text-foreground hover:text-primary"
+            className="text-pure-white hover:text-hero-red p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            Menu
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </Button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-pure-black/95 backdrop-blur-md border-t border-muted">
+          <div className="container mx-auto px-6 py-4 space-y-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block text-base font-medium uppercase tracking-wide transition-all duration-300 hover:text-hero-red ${
+                  location.pathname === item.path ? 'text-hero-red' : 'text-pure-white'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full border-2 border-hero-red text-hero-red hover:bg-hero-red hover:text-pure-white transition-all duration-300 font-medium mt-4"
+              asChild
+            >
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Get In Touch</Link>
+            </Button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
