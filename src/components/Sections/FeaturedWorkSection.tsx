@@ -30,19 +30,19 @@ const FeaturedWorkSection = () => {
     {
       title: 'Visionary Coders',
       category: 'Education Platform',
-      imageUrl: '/lovable-uploads/b30dadb2-7760-478a-94ec-8fe0e213bdf7.png',
+      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
       liveUrl: 'https://visionarycoders.lovable.app'
     },
     {
       title: 'My Safety LLC',
-      category: 'Safety Platform', 
-      imageUrl: '/lovable-uploads/b30dadb2-7760-478a-94ec-8fe0e213bdf7.png',
+      category: 'Safety Platform',
+      imageUrl: '/lovable-uploads/e588c737-d2c5-4ea5-95f6-fe18492d61b7.png',
       liveUrl: 'https://my-safety-llc.lovable.app'
     },
     {
       title: 'Omnifood',
       category: 'Food Delivery',
-      imageUrl: '/lovable-uploads/b30dadb2-7760-478a-94ec-8fe0e213bdf7.png',
+      imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
       liveUrl: 'https://omnifood.lovable.app'
     }
   ];
