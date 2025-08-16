@@ -38,6 +38,66 @@ const Work = () => {
       category: 'Fitness App',
       imageUrl: '/lovable-uploads/0228f5a4-285a-497c-9a7d-5cd5be5ed139.png',
       liveUrl: 'https://vital-trainer.lovable.app'
+    },
+    {
+      title: 'Visionary Coders',
+      category: 'Education Platform',
+      imageUrl: '/lovable-uploads/628c50b2-9f73-41b7-98e8-26e8fa51bb26.png',
+      liveUrl: 'https://visionarycoders.lovable.app'
+    },
+    {
+      title: 'My Safety LLC',
+      category: 'Safety Training',
+      imageUrl: '/lovable-uploads/c3fd700a-854c-4c81-a0bf-dc5812a1ac43.png',
+      liveUrl: 'https://my-safety-llc.lovable.app'
+    },
+    {
+      title: 'Omnifood',
+      category: 'Food Delivery',
+      imageUrl: '/lovable-uploads/e588c737-d2c5-4ea5-95f6-fe18492d61b7.png',
+      liveUrl: 'https://omnifood.lovable.app'
+    },
+    {
+      title: 'Figma Project UI',
+      category: 'Design Tool',
+      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
+      liveUrl: 'https://figma-project-ui.lovable.app'
+    },
+    {
+      title: 'Silicon Graphics',
+      category: 'Mobile Development',
+      imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
+      liveUrl: 'https://silicon-graphics.lovable.app'
+    },
+    {
+      title: 'Sintra Escape Hotel',
+      category: 'Hospitality',
+      imageUrl: '/lovable-uploads/72b12d96-fcc0-4c39-a4e2-6fc9b171000a.png',
+      liveUrl: 'https://sintra-escape-hotel.lovable.app'
+    },
+    {
+      title: 'Nature\'s Pulse App',
+      category: 'Wellness Mobile',
+      imageUrl: '/lovable-uploads/f2868539-6186-4454-a542-03667c08c4d7.png',
+      liveUrl: 'https://app--natures-pulse-31eadf05.base44.app/'
+    },
+    {
+      title: 'Bast Agency',
+      category: 'Digital Agency',
+      imageUrl: '/lovable-uploads/fbe9b969-4215-4f2f-9520-b70a212c36b7.png',
+      liveUrl: 'https://bast-agency.lovable.app'
+    },
+    {
+      title: 'Barab Clone',
+      category: 'Restaurant',
+      imageUrl: '/lovable-uploads/70f993c9-84c0-4219-af87-15158eb81542.png',
+      liveUrl: 'https://barab-clone.lovable.app'
+    },
+    {
+      title: 'Architecture UI',
+      category: 'Architecture Firm',
+      imageUrl: '/lovable-uploads/1cc122c1-c5d5-43ee-86d4-fecd677d31b8.png',
+      liveUrl: 'https://architecture-ui.lovable.app'
     }
   ];
 
