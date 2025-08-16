@@ -25,25 +25,25 @@ const FeaturedWorkSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Featured projects (first 3 in sequence)
+  // Featured projects (first 3 from work page)
   const featuredProjects = [
     {
-      title: 'Video Editor Portfolio',
-      category: 'Creative Storytelling',
-      imageUrl: '/lovable-uploads/b6f320e5-09dc-47d7-bba2-0e4a08d12947.png',
-      liveUrl: 'https://editor-portfolio.lovable.app'
+      title: 'Visionary Coders',
+      category: 'Education Platform',
+      imageUrl: '/lovable-uploads/628c50b2-9f73-41b7-98e8-26e8fa51bb26.png',
+      liveUrl: 'https://visionarycoders.lovable.app'
     },
     {
-      title: 'Indus Hotel',
-      category: 'Luxury Hospitality',
-      imageUrl: '/lovable-uploads/d8eb8a11-cce0-4453-a36f-3720eed4e93a.png',
-      liveUrl: 'https://indus-hotel.lovable.app'
+      title: 'My Safety LLC',
+      category: 'Safety Training',
+      imageUrl: '/lovable-uploads/c3fd700a-854c-4c81-a0bf-dc5812a1ac43.png',
+      liveUrl: 'https://my-safety-llc.lovable.app'
     },
     {
-      title: 'Mövenpick Resort',
-      category: 'Paradise Hotel',
-      imageUrl: '/lovable-uploads/c4385fef-6027-4c37-abdb-4dc32e0255a2.png',
-      liveUrl: 'https://movenpick-hotel.lovable.app'
+      title: 'Omnifood',
+      category: 'Food Delivery',
+      imageUrl: '/lovable-uploads/e588c737-d2c5-4ea5-95f6-fe18492d61b7.png',
+      liveUrl: 'https://omnifood.lovable.app'
     }
   ];
 
