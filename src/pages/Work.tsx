@@ -10,36 +10,6 @@ const Work = () => {
 
   const projects = [
     {
-      title: 'Video Editor Portfolio',
-      category: 'Creative Storytelling',
-      imageUrl: '/lovable-uploads/b6f320e5-09dc-47d7-bba2-0e4a08d12947.png',
-      liveUrl: 'https://editor-portfolio.lovable.app'
-    },
-    {
-      title: 'Indus Hotel',
-      category: 'Luxury Hospitality',
-      imageUrl: '/lovable-uploads/d8eb8a11-cce0-4453-a36f-3720eed4e93a.png',
-      liveUrl: 'https://indus-hotel.lovable.app'
-    },
-    {
-      title: 'Mövenpick Resort',
-      category: 'Paradise Hotel',
-      imageUrl: '/lovable-uploads/c4385fef-6027-4c37-abdb-4dc32e0255a2.png',
-      liveUrl: 'https://movenpick-hotel.lovable.app'
-    },
-    {
-      title: 'Nature\'s Pulse',
-      category: 'Wellness Platform',
-      imageUrl: '/lovable-uploads/9d1ea509-45bf-4b52-8d53-30234144edb5.png',
-      liveUrl: 'https://nature-pulse.lovable.app'
-    },
-    {
-      title: 'Vital Trainer',
-      category: 'Fitness App',
-      imageUrl: '/lovable-uploads/0228f5a4-285a-497c-9a7d-5cd5be5ed139.png',
-      liveUrl: 'https://vital-trainer.lovable.app'
-    },
-    {
       title: 'Visionary Coders',
       category: 'Education Platform',
       imageUrl: '/lovable-uploads/628c50b2-9f73-41b7-98e8-26e8fa51bb26.png',
@@ -98,6 +68,36 @@ const Work = () => {
       category: 'Architecture Firm',
       imageUrl: '/lovable-uploads/1cc122c1-c5d5-43ee-86d4-fecd677d31b8.png',
       liveUrl: 'https://architecture-ui.lovable.app'
+    },
+    {
+      title: 'Video Editor Portfolio',
+      category: 'Creative Storytelling',
+      imageUrl: '/lovable-uploads/b6f320e5-09dc-47d7-bba2-0e4a08d12947.png',
+      liveUrl: 'https://editor-portfolio.lovable.app'
+    },
+    {
+      title: 'Indus Hotel',
+      category: 'Luxury Hospitality',
+      imageUrl: '/lovable-uploads/d8eb8a11-cce0-4453-a36f-3720eed4e93a.png',
+      liveUrl: 'https://indus-hotel.lovable.app'
+    },
+    {
+      title: 'Mövenpick Resort',
+      category: 'Paradise Hotel',
+      imageUrl: '/lovable-uploads/c4385fef-6027-4c37-abdb-4dc32e0255a2.png',
+      liveUrl: 'https://movenpick-hotel.lovable.app'
+    },
+    {
+      title: 'Nature\'s Pulse',
+      category: 'Wellness Platform',
+      imageUrl: '/lovable-uploads/9d1ea509-45bf-4b52-8d53-30234144edb5.png',
+      liveUrl: 'https://nature-pulse.lovable.app'
+    },
+    {
+      title: 'Vital Trainer',
+      category: 'Fitness App',
+      imageUrl: '/lovable-uploads/0228f5a4-285a-497c-9a7d-5cd5be5ed139.png',
+      liveUrl: 'https://vital-trainer.lovable.app'
     }
   ];
 
