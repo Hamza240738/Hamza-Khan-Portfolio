@@ -46,7 +46,7 @@ const Navigation = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`relative text-sm font-medium uppercase tracking-wide transition-all duration-300 hover:text-hero-red hover:shadow-glow group ${
+              className={`relative text-sm font-medium uppercase tracking-wide transition-all duration-300 group ${
                 location.pathname === item.path ? 'text-hero-red' : 'text-pure-white'
               }`}
             >
