@@ -107,9 +107,7 @@ const HeroSection = () => {
         {/* Subtitle */}
         <p className="text-body-large text-pure-white/90 mb-8 animate-fade-in-up max-w-2xl mx-auto" style={{
         animationDelay: '0.2s'
-      }}>
-          Hello! I'm Muhammad Hamza Khan, a creative product designer based in Pakistan.
-        </p>
+      }}>Designing seamless interfaces and delightful user experiences.</p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{
