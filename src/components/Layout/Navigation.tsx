@@ -47,11 +47,11 @@ const Navigation = () => {
               key={item.name}
               to={item.path}
               className={`relative text-sm font-medium uppercase tracking-wide transition-all duration-300 group ${
-                location.pathname === item.path ? 'text-hero-red' : 'text-pure-white'
+                location.pathname === item.path ? 'text-hero-red' : 'text-pure-white hover:text-pure-white'
               }`}
             >
               {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-hero-red transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pure-white transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </div>
