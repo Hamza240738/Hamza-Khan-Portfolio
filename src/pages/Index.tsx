@@ -8,9 +8,9 @@ import ContactSection from '@/components/Sections/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background page-transition">
       <Navigation />
-      <main>
+      <main className="animate-fade-in">
         <HeroSection />
         <AboutSection />
         <ToolsSection />

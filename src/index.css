@@ -76,6 +76,34 @@
     scroll-behavior: smooth;
   }
   
+  /* Page Transitions */
+  .page-transition {
+    animation: fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Enhanced Hover Effects */
+  .hover-glow:hover {
+    filter: drop-shadow(0 0 20px hsl(var(--hero-red) / 0.5));
+  }
+  
+  /* Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--hero-red));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--hero-red) / 0.8);
+  }
+  
   /* Typography Scale */
   .text-display {
     @apply text-6xl md:text-8xl font-black uppercase tracking-tight leading-none;

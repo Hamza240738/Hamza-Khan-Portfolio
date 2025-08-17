@@ -14,22 +14,23 @@ const ProjectCard = ({ title, category, imageUrl, liveUrl, index }: ProjectCardP
 
   return (
     <div 
-      className="group animate-fade-in-up"
-      style={{ animationDelay: `${index * 0.1}s` }}
+      className="group animate-scale-in-bounce hover:scale-[1.02] transition-all duration-500 hover:shadow-glow"
+      style={{ animationDelay: `${index * 0.15}s` }}
     >
       {/* Project Title Bar */}
-      <div className="bg-pure-black border border-hero-red/20 rounded-t-lg p-4 mb-0">
-        <div className="flex items-center justify-between">
+      <div className="bg-pure-black border border-hero-red/20 rounded-t-lg p-4 mb-0 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-hero-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="flex items-center justify-between relative z-10">
           <div>
-            <h3 className="text-lg font-bold text-foreground group-hover:text-hero-red transition-colors duration-300">
+            <h3 className="text-lg font-bold text-foreground group-hover:text-hero-red transition-all duration-500 group-hover:animate-text-reveal">
               {title}
             </h3>
-            <p className="text-sm text-hero-red uppercase tracking-wide">
+            <p className="text-sm text-hero-red uppercase tracking-wide animate-slide-in-left" style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
               {category}
             </p>
           </div>
           <ExternalLink 
-            className="w-5 h-5 text-muted-foreground group-hover:text-hero-red transition-colors duration-300 cursor-pointer hover:scale-110 transition-transform" 
+            className="w-5 h-5 text-muted-foreground group-hover:text-hero-red transition-all duration-500 cursor-pointer hover:scale-125 hover:rotate-12 hover:animate-glow-pulse" 
             onClick={(e) => {
               e.stopPropagation();
               window.open(liveUrl, '_blank');
@@ -63,18 +64,20 @@ const ProjectCard = ({ title, category, imageUrl, liveUrl, index }: ProjectCardP
                   <img
                     src={imageUrl}
                     alt={title}
-                    className={`w-full h-full object-cover transition-transform duration-700 ${
-                      isHovered ? 'scale-110' : 'scale-100'
+                    className={`w-full h-full object-cover transition-all duration-700 ${
+                      isHovered ? 'scale-110 brightness-110' : 'scale-100 brightness-100'
                     }`}
                   />
                   
                   {/* Hover Overlay */}
-                  <div className={`absolute inset-0 bg-hero-red/20 flex items-center justify-center transition-opacity duration-300 ${
-                    isHovered ? 'opacity-100' : 'opacity-0'
+                  <div className={`absolute inset-0 bg-gradient-to-br from-hero-red/30 via-hero-red/20 to-transparent flex items-center justify-center transition-all duration-500 ${
+                    isHovered ? 'opacity-100 backdrop-blur-sm' : 'opacity-0'
                   }`}>
-                    <div className="text-center">
-                      <ExternalLink className="w-8 h-8 text-pure-white mx-auto mb-2" />
-                      <p className="text-pure-white font-semibold">View Live Project</p>
+                    <div className={`text-center transform transition-all duration-500 ${
+                      isHovered ? 'scale-100 translate-y-0' : 'scale-75 translate-y-4'
+                    }`}>
+                      <ExternalLink className="w-8 h-8 text-pure-white mx-auto mb-2 animate-bounce-gentle" />
+                      <p className="text-pure-white font-semibold animate-fade-in-up">View Live Project</p>
                     </div>
                   </div>
                 </div>
@@ -86,9 +89,14 @@ const ProjectCard = ({ title, category, imageUrl, liveUrl, index }: ProjectCardP
           </div>
         </div>
 
-        {/* Floating Animation */}
-        <div className={`absolute inset-0 transition-transform duration-500 ${
-          isHovered ? 'transform -translate-y-2' : 'transform translate-y-0'
+        {/* Enhanced Floating Animation */}
+        <div className={`absolute inset-0 transition-all duration-700 ease-out ${
+          isHovered ? 'transform -translate-y-3 rotate-1' : 'transform translate-y-0 rotate-0'
+        }`} />
+        
+        {/* Shimmer Effect */}
+        <div className={`absolute inset-0 bg-gradient-to-r from-transparent via-pure-white/10 to-transparent transform -skew-x-12 transition-all duration-1000 ${
+          isHovered ? 'translate-x-full' : '-translate-x-full'
         }`} />
       </div>
     </div>
