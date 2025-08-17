@@ -35,7 +35,7 @@ const Navigation = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="text-2xl font-black uppercase tracking-wider text-pure-white hover:text-black transition-colors duration-300"
+          className="text-2xl font-black uppercase tracking-wider text-pure-white hover:text-black hover:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] transition-all duration-300"
         >
           MHK
         </Link>
