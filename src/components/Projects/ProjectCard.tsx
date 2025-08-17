@@ -28,7 +28,13 @@ const ProjectCard = ({ title, category, imageUrl, liveUrl, index }: ProjectCardP
               {category}
             </p>
           </div>
-          <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-hero-red transition-colors duration-300" />
+          <ExternalLink 
+            className="w-5 h-5 text-muted-foreground group-hover:text-hero-red transition-colors duration-300 cursor-pointer hover:scale-110 transition-transform" 
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(liveUrl, '_blank');
+            }}
+          />
         </div>
       </div>
 
