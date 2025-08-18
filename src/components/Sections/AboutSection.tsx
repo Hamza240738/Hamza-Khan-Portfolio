@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Palette, Monitor, Brush, Users } from 'lucide-react';
+import { Palette, Monitor, Search, Zap } from 'lucide-react';
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -22,26 +22,30 @@ const AboutSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const services = [
+  const skills = [
     {
       icon: Monitor,
       title: 'Product Design',
-      description: 'End-to-end product design from concept to launch'
+      description: 'End-to-end product design from concept to launch',
+      gradient: 'from-blue-500 to-purple-600'
     },
     {
       icon: Palette,
       title: 'UI Design',
-      description: 'Beautiful, modern interfaces that users love'
+      description: 'Beautiful, modern interfaces that users love',
+      gradient: 'from-pink-500 to-rose-600'
     },
     {
-      icon: Brush,
-      title: 'Brand Identity',
-      description: 'Cohesive brand experiences across all touchpoints'
+      icon: Search,
+      title: 'UX Research',
+      description: 'Data-driven insights to optimize user experiences',
+      gradient: 'from-green-500 to-emerald-600'
     },
     {
-      icon: Users,
-      title: 'UX Design',
-      description: 'User-centered design that drives engagement'
+      icon: Zap,
+      title: 'Branding',
+      description: 'Creating memorable brand identities that connect',
+      gradient: 'from-orange-500 to-red-600'
     }
   ];
 
@@ -79,28 +83,45 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
+          {/* Skills Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skills.map((skill, index) => (
               <div
-                key={service.title}
-                className="group animate-on-scroll text-center"
+                key={skill.title}
+                className="group animate-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 mx-auto bg-gradient-red-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-foreground group-hover:text-hero-red transition-colors duration-300" />
+                <div className="relative h-full p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 
+                              shadow-lg hover:shadow-2xl transition-all duration-500 ease-out
+                              animate-[float_6s_ease-in-out_infinite] hover:-translate-y-2 hover:scale-105
+                              before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent 
+                              before:rounded-2xl before:opacity-0 before:transition-opacity before:duration-300 
+                              hover:before:opacity-100"
+                     style={{ 
+                       animationDelay: `${index * 1.5}s`,
+                       '--tw-shadow': '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)'
+                     } as React.CSSProperties}
+                >
+                  {/* Icon Circle */}
+                  <div className="flex justify-center mb-4">
+                    <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${skill.gradient} 
+                                   flex items-center justify-center shadow-lg group-hover:scale-110 
+                                   transition-transform duration-300`}>
+                      <skill.icon className="w-8 h-8 text-white" />
+                    </div>
                   </div>
-                  <div className="absolute inset-0 bg-hero-red/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  {/* Title */}
+                  <h3 className="text-xl font-bold text-white text-center mb-3 
+                               group-hover:text-white transition-colors duration-300">
+                    {skill.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-sm text-white/80 text-center leading-relaxed">
+                    {skill.description}
+                  </p>
                 </div>
-                
-                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-hero-red transition-colors duration-300">
-                  {service.title}
-                </h3>
-                
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
               </div>
             ))}
           </div>
