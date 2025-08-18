@@ -80,7 +80,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="text-pure-white hover:text-hero-red p-2"
+            className="text-pure-white hover:text-pure-white hover:shadow-glow p-2 transition-all duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
