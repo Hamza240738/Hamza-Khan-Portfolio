@@ -35,7 +35,7 @@ const Navigation = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="text-2xl font-black uppercase tracking-wider text-pure-white hover:text-black hover:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] transition-all duration-300 hover:scale-110 hover:rotate-3 transform relative group"
+          className="text-2xl font-black uppercase tracking-wider text-pure-white hover:text-hero-red hover:[text-shadow:_-2px_-2px_0_white,_2px_-2px_0_white,_-2px_2px_0_white,_2px_2px_0_white,_-2px_0_0_white,_2px_0_0_white,_0_-2px_0_white,_0_2px_0_white] transition-all duration-300 hover:scale-110 hover:rotate-3 transform relative group"
         >
           <span className="relative z-10">MHK</span>
           <div className="absolute inset-0 bg-hero-red/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10" />
