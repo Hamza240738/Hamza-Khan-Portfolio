@@ -89,12 +89,12 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
         {/* Portrait */}
         
 
         {/* Main Heading */}
-        <h1 className="text-display text-pure-white mb-6 animate-fade-in-up relative">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight leading-none text-pure-white mb-4 sm:mb-6 animate-fade-in-up relative">
           <span className="inline-block animate-slide-in-left">MUHAMMAD</span><br />
           <span className="inline-block animate-slide-in-right" style={{
           animationDelay: '0.2s'
@@ -105,22 +105,22 @@ const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-body-large text-pure-white/90 mb-8 animate-fade-in-up max-w-2xl mx-auto" style={{
+        <p className="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-pure-white/90 mb-6 sm:mb-8 animate-fade-in-up max-w-2xl mx-auto px-2" style={{
         animationDelay: '0.2s'
       }}>Designing seamless interfaces and delightful user experiences.</p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-fade-in-up px-4" style={{
         animationDelay: '0.4s'
       }}>
-          <Button size="lg" className="bg-pure-white text-pure-black hover:bg-pure-white/90 font-semibold uppercase tracking-wide px-8 py-3 transition-all duration-500 hover:scale-105 hover:shadow-glow group relative overflow-hidden" asChild>
+          <Button size="lg" className="w-full sm:w-auto bg-pure-white text-pure-black hover:bg-pure-white/90 font-semibold uppercase tracking-wide px-6 sm:px-8 py-3 transition-all duration-500 hover:scale-105 hover:shadow-glow group relative overflow-hidden" asChild>
             <Link to="/work">
               <span className="relative z-10">View My Work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-hero-red/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </Link>
           </Button>
           
-          <Button variant="outline" size="lg" className="border-pure-white text-pure-white hover:bg-pure-white hover:text-pure-black font-semibold uppercase tracking-wide px-8 py-3 transition-all duration-500 hover:scale-105 hover:shadow-glow group relative overflow-hidden" asChild>
+          <Button variant="outline" size="lg" className="w-full sm:w-auto border-pure-white text-pure-white hover:bg-pure-white hover:text-pure-black font-semibold uppercase tracking-wide px-6 sm:px-8 py-3 transition-all duration-500 hover:scale-105 hover:shadow-glow group relative overflow-hidden" asChild>
             <Link to="/contact">
               <span className="relative z-10">Let's Talk</span>
               <div className="absolute inset-0 bg-gradient-to-r from-pure-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
