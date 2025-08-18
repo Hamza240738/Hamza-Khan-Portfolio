@@ -12,23 +12,30 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message')
-    };
+    
     try {
-      // Simulate email sending - replace with actual email service
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      toast({
-        title: "Message sent successfully!",
-        description: "Thanks for reaching out. I'll get back to you soon."
+      const response = await fetch('https://formspree.io/f/xvgqnjno', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
-      (e.target as HTMLFormElement).reset();
+      
+      if (response.ok) {
+        toast({
+          title: "Thanks! Your message has been sent.",
+          description: "I'll get back to you soon."
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       toast({
-        title: "Failed to send message",
+        title: "Oops! Something went wrong, please try again.",
         description: "Please try again or contact me directly.",
         variant: "destructive"
       });
