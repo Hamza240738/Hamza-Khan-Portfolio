@@ -117,7 +117,7 @@ const ContactSection = () => {
                     </div>
                   </a>
 
-                  <a href="tel:+923001234567" className="flex items-center space-x-4 text-muted-foreground hover:text-hero-red transition-colors duration-300 group">
+                  <a href="tel:+923353090387" className="flex items-center space-x-4 text-muted-foreground hover:text-hero-red transition-colors duration-300 group">
                     <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center group-hover:bg-hero-red/10 transition-colors duration-300">
                       <Phone className="w-5 h-5" />
                     </div>
