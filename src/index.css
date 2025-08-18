@@ -125,27 +125,17 @@
     @apply text-base font-normal leading-relaxed;
   }
 
-  /* Floating animation for cards */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
+  /* Advanced card animations */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
     }
-    50% {
-      transform: translateY(-10px);
+    100% {
+      background-position: 200% 0;
     }
   }
 
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
+  .animate-shimmer {
+    animation: shimmer 2s ease-in-out infinite;
   }
 }
