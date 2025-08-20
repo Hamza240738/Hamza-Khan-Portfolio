@@ -34,6 +34,12 @@ const Work = () => {
       liveUrl: 'https://figma-project-ui.lovable.app'
     },
     {
+      title: 'Nebula Stride',
+      category: 'Business Dashboard',
+      imageUrl: '/lovable-uploads/b49398db-cec7-44f7-a9a2-e1b155e7b2da.png',
+      liveUrl: 'https://nebula-stride-ui.lovable.app'
+    },
+    {
       title: 'Silicon Graphics',
       category: 'Mobile Development',
       imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
