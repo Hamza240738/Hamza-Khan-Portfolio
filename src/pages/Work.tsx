@@ -28,16 +28,16 @@ const Work = () => {
       liveUrl: 'https://omnifood.lovable.app'
     },
     {
-      title: 'Figma Project UI',
-      category: 'Design Tool',
-      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
-      liveUrl: 'https://figma-project-ui.lovable.app'
-    },
-    {
       title: 'Nebula Stride',
       category: 'Business Dashboard',
       imageUrl: '/lovable-uploads/b49398db-cec7-44f7-a9a2-e1b155e7b2da.png',
       liveUrl: 'https://nebula-stride-ui.lovable.app'
+    },
+    {
+      title: 'Figma Project UI',
+      category: 'Design Tool',
+      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
+      liveUrl: 'https://figma-project-ui.lovable.app'
     },
     {
       title: 'Silicon Graphics',
