@@ -95,23 +95,16 @@ const AboutSection = () => {
                 }}
               >
                 <div className="relative h-full p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 
-                              shadow-lg transition-all duration-700 ease-out cursor-pointer
-                              hover:-translate-y-3 hover:scale-[1.02] hover:shadow-2xl hover:shadow-white/10
-                              hover:bg-white/15 hover:border-white/30
-                              before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/20 before:to-transparent 
-                              before:rounded-2xl before:opacity-0 before:transition-all before:duration-500 
-                              hover:before:opacity-100
-                              after:absolute after:inset-0 after:rounded-2xl after:bg-gradient-to-br 
-                              after:from-transparent after:via-white/5 after:to-transparent
-                              after:opacity-0 after:transition-opacity after:duration-300
-                              hover:after:opacity-100"
+                              shadow-lg transition-all duration-300 ease-out cursor-pointer
+                              hover:-translate-y-2 hover:scale-[1.01] hover:shadow-xl hover:shadow-white/5
+                              hover:bg-white/15 hover:border-white/30"
                 >
                   {/* Icon Circle */}
                   <div className="flex justify-center mb-4">
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${skill.gradient} 
-                                   flex items-center justify-center shadow-lg 
-                                   transition-all duration-500 ease-out
-                                   group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-xl`}>
+                     <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${skill.gradient} 
+                                    flex items-center justify-center shadow-lg 
+                                    transition-all duration-300 ease-out
+                                    group-hover:scale-105 group-hover:shadow-xl`}>
                       <skill.icon className="w-8 h-8 text-white transition-all duration-300 group-hover:scale-110" />
                     </div>
                   </div>
@@ -129,11 +122,6 @@ const AboutSection = () => {
                     {skill.description}
                   </p>
 
-                  {/* Subtle animated border */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent 
-                                via-white/20 to-transparent opacity-0 group-hover:opacity-100 
-                                transition-opacity duration-500 pointer-events-none
-                                bg-[length:200%_100%] animate-[shimmer_2s_ease-in-out_infinite]" />
                 </div>
               </div>
             ))}
