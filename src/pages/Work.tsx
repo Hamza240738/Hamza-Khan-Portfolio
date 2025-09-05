@@ -13,7 +13,7 @@ const Work = () => {
       title: 'Visionary Coders',
       category: 'Education Platform',
       imageUrl: '/lovable-uploads/628c50b2-9f73-41b7-98e8-26e8fa51bb26.png',
-      liveUrl: 'https://visionarycoders.lovable.app'
+      liveUrl: 'https://visionarycoder.lovable.app/'
     },
     {
       title: 'My Safety LLC',
