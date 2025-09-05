@@ -46,6 +46,12 @@ const Work = () => {
       liveUrl: 'https://figma-project-ui.lovable.app'
     },
     {
+      title: 'Unify School',
+      category: 'Learning Platform',
+      imageUrl: '/lovable-uploads/da73c068-76c0-4b2e-b9df-ec2cf8691ea5.png',
+      liveUrl: 'https://unify-school.lovable.app'
+    },
+    {
       title: 'Silicon Graphics',
       category: 'Mobile Development',
       imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
