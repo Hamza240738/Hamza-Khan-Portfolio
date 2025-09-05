@@ -5,6 +5,7 @@ import AboutSection from '@/components/Sections/AboutSection';
 import ToolsSection from '@/components/Sections/ToolsSection';
 import FeaturedWorkSection from '@/components/Sections/FeaturedWorkSection';
 import ContactSection from '@/components/Sections/ContactSection';
+import ScrollToTopButton from '@/components/UI/ScrollToTopButton';
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
