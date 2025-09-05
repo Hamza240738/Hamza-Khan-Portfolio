@@ -18,7 +18,7 @@ const HeroSection = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-  return <section className="relative min-h-screen bg-gradient-hero overflow-hidden flex items-center justify-center">
+  return <section className="sticky top-0 min-h-screen bg-gradient-hero overflow-hidden flex items-center justify-center z-0">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Shimmer Effect */}

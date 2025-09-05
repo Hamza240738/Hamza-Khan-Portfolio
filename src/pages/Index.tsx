@@ -12,10 +12,12 @@ const Index = () => {
       <Navigation />
       <main className="animate-fade-in">
         <HeroSection />
-        <AboutSection />
-        <ToolsSection />
-        <FeaturedWorkSection />
-        <ContactSection />
+        <div className="relative z-10 bg-background">
+          <AboutSection />
+          <ToolsSection />
+          <FeaturedWorkSection />
+          <ContactSection />
+        </div>
       </main>
       <Footer />
     </div>
