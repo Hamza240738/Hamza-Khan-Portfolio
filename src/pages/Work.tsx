@@ -34,6 +34,12 @@ const Work = () => {
       liveUrl: 'https://nebula-stride-ui.lovable.app'
     },
     {
+      title: 'Abdul Ahad Khan Portfolio',
+      category: 'Educational Portfolio',
+      imageUrl: '/lovable-uploads/f373eae9-b6ef-47e7-99e3-fe00efaadee3.png',
+      liveUrl: 'https://abdulahadkhan.lovable.app'
+    },
+    {
       title: 'Figma Project UI',
       category: 'Design Tool',
       imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
