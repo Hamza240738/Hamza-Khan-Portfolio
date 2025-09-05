@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navigation from '@/components/Layout/Navigation';
 import Footer from '@/components/Layout/Footer';
 import ProjectCard from '@/components/Projects/ProjectCard';
+import ScrollToTopButton from '@/components/UI/ScrollToTopButton';
 
 const Work = () => {
   useEffect(() => {
@@ -159,6 +160,7 @@ const Work = () => {
       </section>
       
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
