@@ -34,6 +34,12 @@ const Work = () => {
       liveUrl: 'https://nebula-stride-ui.lovable.app'
     },
     {
+      title: 'Unify School',
+      category: 'Learning Platform',
+      imageUrl: '/lovable-uploads/dfe1cc4b-16a9-4474-9dee-ee3e1a3cf36d.png',
+      liveUrl: 'https://unify-school.lovable.app'
+    },
+    {
       title: 'Abdul Ahad Khan Portfolio',
       category: 'Educational Portfolio',
       imageUrl: '/lovable-uploads/f373eae9-b6ef-47e7-99e3-fe00efaadee3.png',
