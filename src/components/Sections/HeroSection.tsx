@@ -81,6 +81,30 @@ const HeroSection = () => {
         transform: `translate(${mousePosition.x * 0.015}px, ${mousePosition.y * 0.015}px)`
       }} />
         
+        {/* Multi-layer Parallax Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Layer 1 - Slowest */}
+          <div className="absolute top-10 left-10 w-32 h-32 bg-pure-white/5 rounded-full blur-xl" style={{
+            transform: `translate(${mousePosition.x * 0.005}px, ${mousePosition.y * 0.005}px)`
+          }} />
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-pure-white/8 rounded-full blur-2xl" style={{
+            transform: `translate(${mousePosition.x * 0.008}px, ${mousePosition.y * 0.008}px)`
+          }} />
+          
+          {/* Layer 2 - Medium */}
+          <div className="absolute top-1/3 right-10 w-24 h-24 bg-pure-white/10 rounded-full blur-lg" style={{
+            transform: `translate(${mousePosition.x * 0.012}px, ${mousePosition.y * 0.012}px)`
+          }} />
+          <div className="absolute bottom-1/3 left-16 w-28 h-28 bg-pure-white/6 rounded-full blur-xl" style={{
+            transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`
+          }} />
+          
+          {/* Layer 3 - Fastest */}
+          <div className="absolute top-1/2 left-1/2 w-16 h-16 bg-pure-white/15 rounded-full blur-md" style={{
+            transform: `translate(${mousePosition.x * 0.025}px, ${mousePosition.y * 0.025}px) translate(-50%, -50%)`
+          }} />
+        </div>
+        
         {/* Morphing Blob */}
         <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-pure-white/5 rounded-full animate-glow-pulse" style={{
         clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',

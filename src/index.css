@@ -73,8 +73,14 @@
   }
   
   html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+/* Text Selection Styling */
+::selection {
+  background: #ffffff33; /* translucent white */
+  color: #ffffff;
+}
   
   /* Page Transitions */
   .page-transition {
