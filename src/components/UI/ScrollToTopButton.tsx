@@ -41,15 +41,26 @@ const ScrollToTopButton = () => {
   // Calculate circle stroke properties
   const radius = 22;
   const circumference = 2 * Math.PI * radius;
-  const strokeDasharray = `${(scrollProgress / 100) * circumference} ${circumference}`;
+  const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
     <div className="fixed bottom-6 right-6 z-50 md:bottom-8 md:right-8">
-      {/* SVG Progress Circle */}
+      {/* SVG Progress Circles */}
       <svg 
         className="absolute inset-0 w-12 h-12 -rotate-90" 
         viewBox="0 0 48 48"
       >
+        {/* Background circle */}
+        <circle
+          cx="24"
+          cy="24"
+          r={radius}
+          fill="none"
+          stroke="hsl(var(--muted-foreground))"
+          strokeWidth="2"
+          opacity="0.2"
+        />
+        {/* Progress circle */}
         <circle
           cx="24"
           cy="24"
@@ -57,9 +68,10 @@ const ScrollToTopButton = () => {
           fill="none"
           stroke="hsl(var(--hero-red))"
           strokeWidth="2"
-          strokeDasharray={strokeDasharray}
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
           strokeLinecap="round"
-          className="transition-all duration-150 ease-out"
+          className="transition-all duration-200 ease-linear"
         />
       </svg>
       
