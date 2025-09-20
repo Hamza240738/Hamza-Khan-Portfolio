@@ -43,7 +43,7 @@ const Work = () => {
     {
       title: 'Figma Project UI',
       category: 'Design Tool',
-      imageUrl: '/lovable-uploads/bc17a148-d868-4ffb-961e-00f1ae2e0f60.png',
+      imageUrl: '/lovable-uploads/figma-project-new.png',
       liveUrl: 'https://figma-project-ui.lovable.app'
     },
     {
@@ -55,7 +55,7 @@ const Work = () => {
     {
       title: 'Silicon Graphics',
       category: 'Mobile Development',
-      imageUrl: '/lovable-uploads/5f3f1785-e6a8-4780-94c6-75e671920642.png',
+      imageUrl: '/lovable-uploads/silicon-graphics-new.png',
       liveUrl: 'https://silicon-graphics.lovable.app'
     },
     {
@@ -87,24 +87,6 @@ const Work = () => {
       category: 'Architecture Firm',
       imageUrl: '/lovable-uploads/1cc122c1-c5d5-43ee-86d4-fecd677d31b8.png',
       liveUrl: 'https://architecture-ui.lovable.app'
-    },
-    {
-      title: 'Video Editor Portfolio',
-      category: 'Creative Storytelling',
-      imageUrl: '/lovable-uploads/b6f320e5-09dc-47d7-bba2-0e4a08d12947.png',
-      liveUrl: 'https://editor-portfolio.lovable.app'
-    },
-    {
-      title: 'Indus Hotel',
-      category: 'Luxury Hospitality',
-      imageUrl: '/lovable-uploads/d8eb8a11-cce0-4453-a36f-3720eed4e93a.png',
-      liveUrl: 'https://indus-hotel.lovable.app'
-    },
-    {
-      title: 'Mövenpick Resort',
-      category: 'Paradise Hotel',
-      imageUrl: '/lovable-uploads/c4385fef-6027-4c37-abdb-4dc32e0255a2.png',
-      liveUrl: 'https://movenpick-hotel.lovable.app'
     },
     {
       title: 'Nature\'s Pulse',
