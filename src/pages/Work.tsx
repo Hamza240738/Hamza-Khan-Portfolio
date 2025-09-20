@@ -23,6 +23,12 @@ const Work = () => {
       liveUrl: 'https://my-safety-llc.lovable.app'
     },
     {
+      title: 'Hassan Analyst Portfolio',
+      category: 'Data Analytics Portfolio',
+      imageUrl: '/lovable-uploads/hassan-analyst-portfolio.png',
+      liveUrl: 'https://hassan-analyst-portfolio.vercel.app/'
+    },
+    {
       title: 'Omnifood',
       category: 'Food Delivery',
       imageUrl: '/lovable-uploads/e588c737-d2c5-4ea5-95f6-fe18492d61b7.png',
